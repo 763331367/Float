@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #8a234e;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 20px 0;
+}
+#div1 {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+/*每个a标签没有设置宽度和高度，只设置padding，通过改变字体大小来改变a标签的大小*/
+#div1 a {
+    position: absolute;
+    color: #000;
+    text-decoration: none;
+    top: 600px;
+    left: -250px;
+    display: block;
+    background: #fff;
+    filter: alpha(opacity:30);
+    opacity: 0.3;
+    font-size: 14px;
+    padding: 6px 10px;
+    font-family: arial;
+    z-index: 2;
+    border-radius: 8px;
+    white-space:nowrap;  /*防止文字横向移动到右边框时换行*/
+}
+#div1 a:hover {
+    filter: alpha(opacity:100);
+    opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 3;
+}
